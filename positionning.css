@@ -1,0 +1,55 @@
+.positioning2 {
+
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+
+}
+
+.absolute2{
+
+    position: absolute;
+    margin-left: 350px;
+    height: 200vh;
+     
+}
+
+.relative2 {
+
+    position: relative;
+    margin-left: 700px;
+
+}
+
+.abtInRelative{
+
+    position: absolute;
+    right: 590px;
+    top: -1px;
+    max-width: 40px;
+     
+}
+
+.pic {
+
+    position: relative;
+    
+}
+
+
+img{
+
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+.rePstn {
+
+    background-color: red;
+    position: absolute;
+    position: absolute;
+     left: 550px;
+    top: 65px;
+    max-width: 40px;
+}

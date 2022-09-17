@@ -1,0 +1,265 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+}
+
+.animation {
+
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    text-transform: uppercase;
+    
+            /*transform-origin: top left;
+            transform-origin: bottom right;
+                transform-origin: 50px 50px;
+                transition: all 5s ease-in-out;
+            */
+   
+}
+
+.animation {
+
+    margin-left: 200px;
+    margin-top: 200px;
+    text-align: center;  
+}
+
+.animation {
+    animation: animateMe 2s;
+    animation-iteration-count: 10;
+}
+
+
+/*
+@keyframes animateMe {
+
+    20%{
+        background-color: blue;
+        transform: rotateY(0.6turn) translateX(45);
+        
+    }
+    50%{
+        background-color: royalblue;
+        transform: rotateX(0.5turn);
+         
+    }
+    90%{
+          background-color: seagreen;
+          transform: rotateZ(360deg);
+    }
+}
+*/
+
+.animation:hover {
+    transform: skew(-100);
+}
+
+@keyframes animateMe {
+
+    20%{
+        background-color: blue;
+        transform: rotateY(90deg) translateY(180);
+        
+    }
+    50%{
+        background-color: royalblue;
+        
+         
+         
+    }
+    90%{
+          background-color: seagreen;
+          
+           
+    }
+}
+
+
+.translate {
+
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+    text-transform: uppercase;
+    margin-left: 200px;
+    margin-top: 50px;
+    text-align: center;  
+    
+}
+
+.translate {
+
+    animation: animateTranslate 1s linear infinite ;
+    transition: ease-in-out 5s;
+}
+
+
+@keyframes animateTranslate {
+
+    0%{
+        background-color: red;
+        transform: rotate(360deg) translateZ(0);
+        
+    }
+    50%{
+        background-color: royalblue;
+         
+         
+    }
+    100%{
+          background-color: seagreen;
+           
+    }
+}
+
+
+
+.circle {
+
+    height: 100px;
+    width: 200px;
+    background-color:black;
+    text-transform: uppercase;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;  
+    padding-top: 100px;
+    border-radius: 100px;
+    color: blanchedalmond;
+    
+}
+
+.circle {
+
+    animation: animateCircle 0.5s linear infinite ;
+     
+}
+
+
+@keyframes animateCircle {
+
+    0%{
+        
+        transform: rotate(360deg) translateZ(0);
+        border-top: red solid 2px;
+        
+    }
+    50%{
+         
+        border-top: white solid 2px;
+         
+         
+    }
+    100%{
+           
+          border-top: green solid 2px;
+           
+    }
+}
+
+
+.moving{
+
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    color: red;
+    transition: animation 2s  ;
+
+}
+
+.moving{
+
+    animation: MovingObject 4s linear infinite reverse;
+
+}
+
+@keyframes MovingObject  {
+
+    0%{
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: blue;
+        left: 300px;
+        top: 0px;
+    }
+    50%{
+        background-color: green;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        background-color: white;
+        left: 0px;
+        top: 300px;   
+    }
+    100%{
+        background-color: white;
+        left: 0px;
+        top: 0px;  
+    }
+
+    }
+
+    .clone{
+
+        height: 200px;
+        width: 200px;
+        position: relative;
+        background-color: greenyellow;
+        text-transform: uppercase;
+        color: red;
+        transition: animation 2s  ;
+    
+    }
+    
+    .clone{
+    
+        animation: animateMovingObject 4s linear infinite;
+    
+    }
+    
+    @keyframes animateMovingObject  {
+    
+        0%{
+            background-color: white;
+            left: 0px;
+            top: 0px;
+            border-radius:0 0 0 0;
+        }
+        25%{
+            background-color: blue;
+            left: 300px;
+            top: 0px;
+            border-radius: 50% 0 0 0;
+        }
+        50%{
+            background-color: green;
+            left: 300px;
+            top: 300px;
+            border-radius:50% 50% 0 0;
+        }
+        75%{
+            background-color: white;
+            left: 0px;
+            top: 300px; 
+            border-radius: 50% 50% 50% 0;  
+        }
+        100%{
+            background-color: white;
+            left: 0px;
+            top: 0px; 
+            border-radius: 50% 50% 50% 50%; 
+        }
+    
+        }
+

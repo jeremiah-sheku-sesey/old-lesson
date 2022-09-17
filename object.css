@@ -1,0 +1,679 @@
+
+    *{
+
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #124;
+        font-size: 20px;
+        color: white;
+        line-height: 1.6;
+        text-align: center;
+
+    }
+
+    .container{
+        max-width: 760px;
+        margin: auto;
+        padding: 0 30px ;
+    }
+
+    .showcase{
+
+        height: 300px;
+        background-color: red;
+    }
+
+    .showcase h1 {
+      font-size: 50px;
+      line-height: 1.3;
+      position: relative;
+    }
+
+
+    .headings{
+        animation: headings 3s;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes headings {
+        0%{
+            top: -50px;
+        }
+
+        100%{
+            
+            top: 200px;
+        }
+        
+    }
+
+    #wrapper{
+        position: relative;
+        animation: contents 2s forwards;
+    }
+
+    @keyframes contents {
+        0%{
+            left: -1000px;
+        }
+
+        100%{
+            
+            left: 0;
+        }
+        
+    }
+
+    .flip3 {
+        background-color: transparent ;
+        display: inline-block;
+        transition: transform 1s;
+        color: white;
+        border: red 1px solid;
+        opacity: 0;
+        animation: flip3 3s 3s forwards;
+        display: inline-block;
+        margin-top: 40px;
+        padding: 1rem 1rem;
+        text-decoration: none;
+        
+    }
+    
+    .flip3:hover{
+        transform: rotateY(180deg);
+    }
+
+    @keyframes flip3 {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            
+            opacity: 1;
+        }
+        
+    }
+
+    .try{
+
+        background-color: red;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin-top: 40px;
+        display: inline-block;
+        
+    }
+
+    .try{
+        animation: try 2s linear infinite;
+    }
+
+    
+    @keyframes try {
+        0%{
+            bottom: -1000px;
+            opacity: 0;
+            border-radius: 0 0 0 0;
+        }
+
+        25%{
+            opacity: 1;
+            background-color: blue;
+            height: 30px;
+            width: 60px;
+            bottom: 50px;
+            border-radius: 50% 0 0 0;
+        }
+
+    
+        50%{
+            opacity: 2;
+            background-color: green;
+            height: 30px;
+            width: 60px;
+            bottom: 100px;
+            border-radius: 50% 50% 0 0;
+            margin-left: 50px;
+        }
+
+        
+        75%{
+            opacity: 3;
+            background-color: yellow;
+            height: 30px;
+            width: 60px;
+            bottom: 150px;
+            border-radius: 50% 50% 50% 0;
+        }
+
+        
+        100%{
+            opacity: 0;
+            background-color: blue;
+            height: 30px;
+            width: 60px;
+            bottom: 200px;
+            border-radius: 50% 50% 50% 50%;
+            margin-left: 100px;
+        }
+        
+    }
+
+    .try2{
+
+        background-color:black;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin-top: 40px;
+        display: inline-block;
+        margin-left: 50px;
+        opacity: 0;
+        
+    }
+
+    .try2{
+        animation: try2 2s 1s linear infinite;
+    }
+
+    
+    @keyframes try2 {
+        0%{
+            background-color: #000;
+            bottom: -2000px;
+            opacity: 0;
+            border-radius: 0 50% 0 0;
+        }
+
+        25%{
+            opacity: 1;
+            background-color: blue;
+            height: 30px;
+            width: 60px;
+            bottom: 50px;
+            border-radius: 50% 0 0 0;
+        }
+
+    
+        50%{
+            opacity: 2;
+            background-color: green;
+            height: 50px;
+            width: 90px;
+            bottom: 100px;
+            border-radius: 50% 50% 0 0;
+            margin-left: 50px;
+        }
+
+        
+        75%{
+            opacity: 3;
+            background-color: red;
+            height: 70px;
+            width: 120px;
+            bottom: 150px;
+            border-radius: 0 50% 50% 0;
+            margin-left: 150px;
+        }
+
+        
+        100%{
+            opacity: 0;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            bottom: 200px;
+            border-radius: 50% 50% 50% 50%;
+        }
+        
+    }
+
+    .try3{
+
+        background-color:black;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin-top: 40px;
+        display: inline-block;
+        margin-left: 100px;
+        opacity: 0;
+        
+    }
+
+    .try3{
+        animation: try3 2s 3s linear infinite;
+    }
+
+    
+    @keyframes try3 {
+        0%{
+            background-color: #000;
+            bottom: -2000px;
+            opacity: 0;
+            border-radius: 0 50% 0 50%;
+        }
+
+        25%{
+            opacity: 1;
+            background-color: blue;
+            height: 20px;
+            width: 40px;
+            bottom: 50px;
+            border-radius: 50% 0 0 0;
+            margin-left: 100px;
+        }
+
+    
+        50%{
+            opacity: 2;
+            background-color: green;
+            height: 50px;
+            width: 90px;
+            bottom: 100px;
+            border-radius: 50% 50% 0 0;
+            margin-left: 50px;
+        }
+
+        
+        75%{
+            opacity: 3;
+            background-color: red;
+            height: 70px;
+            width: 120px;
+            bottom: 150px;
+            border-radius: 0 50% 50% 0;
+        }
+
+        
+        100%{
+            opacity: 0;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            bottom: 200px;
+            border-radius: 50% 0 50% 50%;
+        }
+        
+    }
+
+    .try4{
+
+        background-color:black;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin-top: 40px;
+        display: inline-block;
+        margin-left: 50px;
+        opacity: 0;
+        
+    }
+
+    .try4{
+        animation: try3 2s 2s linear infinite;
+    }
+
+    
+    @keyframes try4 {
+        0%{
+            background-color: #000;
+            bottom: -2000px;
+            opacity: 0;
+            border-radius: 0 50% 0 50%;
+        }
+
+        25%{
+            opacity: 1;
+            background-color: blue;
+            height: 20px;
+            width: 40px;
+            bottom: 50px;
+            border-radius: 50% 0 0 0;
+            margin-left: 0;
+        }
+
+    
+        50%{
+            opacity: 2;
+            background-color: green;
+            height: 50px;
+            width: 90px;
+            bottom: 100px;
+            border-radius: 50% 50% 0 0;
+            margin-left: 50px;
+        }
+
+        
+        75%{
+            opacity: 3;
+            background-color: red;
+            height: 70px;
+            width: 120px;
+            bottom: 150px;
+            border-radius: 0 50% 50% 0;
+            margin-left: 0;
+        }
+
+        
+        100%{
+            opacity: 0;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            bottom: 200px;
+            border-radius: 50% 0 50% 50%;
+            margin-left: 50px;
+        }
+        
+    }
+
+    
+    .try6{
+
+        background-color: red;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin-top: 40px;
+        display: inline-block;
+        margin-right: 150px;
+        opacity: 0;
+        
+    }
+
+    .try6{
+        animation: try6 2s 4s linear infinite;
+    }
+
+    
+    @keyframes try6 {
+        0%{
+            bottom: -1000px;
+            opacity: 0;
+            border-radius: 0 0 0 0;
+        }
+
+        25%{
+            opacity: 1;
+            background-color: blue;
+            height: 30px;
+            width: 60px;
+            bottom: 50px;
+            border-radius: 50% 0 0 0;
+            margin-left: 50px;
+        }
+
+    
+        50%{
+            opacity: 2;
+            background-color: green;
+            height: 30px;
+            width: 60px;
+            bottom: 100px;
+            border-radius: 50% 50% 0 0;
+        }
+
+        
+        75%{
+            opacity: 3;
+            background-color: yellow;
+            height: 30px;
+            width: 60px;
+            bottom: 150px;
+            border-radius: 50% 50% 50% 0;
+            margin-left: 50px;
+        }
+
+        
+        100%{
+            opacity: 0;
+            background-color: blue;
+            height: 30px;
+            width: 60px;
+            bottom: 200px;
+            border-radius: 50% 50% 50% 50%;
+        }
+        
+    }
+
+    .try5{
+
+        background-color:black;
+        position: relative;
+        height: 50px;
+        width: 100px;
+        margin-top: 40px;
+        display: inline-block;
+        margin-left: 110px;
+        opacity: 0;
+        
+    }
+
+    .try5{
+        animation: try5 2s 2s linear infinite;
+    }
+
+    
+    @keyframes try5 {
+        0%{
+            background-color: #000;
+            bottom: -2000px;
+            opacity: 0;
+            border-radius: 0 50% 0 0;
+        }
+
+        25%{
+            opacity: 1;
+            background-color: blue;
+            height: 30px;
+            width: 60px;
+            bottom: 50px;
+            border-radius: 50% 0 0 0;
+            margin-left: 70px;
+        }
+
+    
+        50%{
+            opacity: 2;
+            background-color: green;
+            height: 50px;
+            width: 90px;
+            bottom: 100px;
+            border-radius: 50% 50% 0 0;
+            margin-left: 100px;
+        }
+
+        
+        75%{
+            opacity: 3;
+            background-color: red;
+            height: 70px;
+            width: 120px;
+            bottom: 150px;
+            border-radius: 0 50% 50% 0;
+            margin-left: 50px;
+        }
+
+        
+        100%{
+            opacity: 0;
+            background-color: yellow;
+            height: 100px;
+            width: 150px;
+            bottom: 200px;
+            border-radius: 50% 50% 50% 50%;
+        }
+        
+    }
+
+
+    .gridDisplay {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: top;
+        margin-top: 300px;
+      }
+
+
+    .circle {
+
+        height: 100px;
+        width: 200px;
+        background-color:black;
+        text-transform: uppercase;
+        margin-left: 200px;
+        margin-top: 50px;
+        text-align: center;  
+        padding-top: 100px;
+        border-radius: 100px;
+        color: blanchedalmond;
+        font-size: 15px;
+    }
+    
+    .circle {
+    
+        animation: animateCircle 0.5s linear infinite ;
+         
+    }
+    
+    
+    @keyframes animateCircle {
+    
+        0%{
+            
+            transform: rotate(360deg) translateZ(0);
+            border-top: red solid 2px;
+            
+        }
+        50%{
+             
+            border-top: white solid 2px;
+             
+             
+        }
+        100%{
+               
+              border-top: green solid 2px;
+               
+        }
+    }
+
+
+    .circle2 {
+
+        height: 100px;
+        width: 200px;
+        background-color:black;
+        text-transform: uppercase;
+        margin-left: 200px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-align: center;  
+        padding-top: 100px;
+        border-radius: 100px;
+        color: white;
+        border-left: red 2px solid;
+         
+        
+    }
+    
+    .circle2 {
+    
+        animation: animateCircle2 0.5s linear infinite ;
+         
+    }
+    
+    
+    @keyframes animateCircle2 {
+    
+        0%{
+            
+            transform: rotate(360deg) translateY(0);
+            border-top: red solid 2px;
+            background-color: tomato;
+            
+        }
+        30%{
+             
+            border-left: white solid 2px;
+             
+            background-color: violet;
+             
+             
+        }
+        60%{
+               
+              border-right: green solid 2px;
+              
+              background-color: turquoise;
+               
+        }
+
+        100%{
+               
+            border-right: green solid 2px;
+             
+            background-color: blue;
+             
+      }
+    }
+
+
+    .circle3 {
+
+        height: 100px;
+        width: 200px;
+        background-color:black;
+        text-transform: uppercase;
+        margin-left: 200px;
+        text-align: center;  
+        padding-top: 100px;
+        border-radius: 100px;
+        color: blanchedalmond;
+        font-size: 15px;
+    }
+    
+    .circle3 {
+    
+        animation: animateCircle3 0.5s linear infinite ;
+         
+    }
+    
+    
+    @keyframes animateCircle3 {
+    
+        0%{
+            
+            transform: rotate(360deg) translateZ(0);
+            border-top: red solid 2px;
+            
+        }
+        50%{
+             
+            border-top: white solid 2px;
+             
+             
+        }
+        100%{
+               
+              border-top: green solid 2px;
+               
+        }
+    }
+
+    .circle3:hover  {
+        animation: none;
+        background-color: blue;
+
+    }
+
+
+

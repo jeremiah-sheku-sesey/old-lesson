@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: aqua;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.topRoom h2 {
+    margin: 40px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.progresbar {
+    background:yellow;
+    width: 600px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.progresbar div {
+    width: 5%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.progresbar div span {
+    background: #000; 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: -10px;
+    float: right;
+}
+
+.html {
+    background: springgreen;
+    animation: html 2s forwards;
+}
+
+@keyframes html {
+    100%{
+        width: 86%;
+    }
+}
+
+.css {
+    background: rgba(180, 23, 189, 0.836);
+    animation: css 2s forwards;
+}
+
+@keyframes css {
+    100%{
+        width: 74%;
+    }
+}
+
+.cpp {
+    background: rgba(9, 91, 199, 0.836);
+    animation: cpp 2s forwards;
+}
+
+@keyframes cpp {
+    100%{
+        width: 62%;
+    }
+}
+
+.javascript {
+    background: rgb(95, 156, 71);
+    animation: javascript 2s forwards;
+}
+
+@keyframes javascript {
+    100%{
+        width: 45%;
+    }
+}
+
+.python{
+    background: rgba(0, 255, 0, 0.842);
+    animation: python 2s forwards;
+}
+
+@keyframes python {
+    100%{
+        width: 55%;
+    }
+}
+
+.sql {
+    background: rgba(255, 30, 0, 0.815);
+    animation: sql 2s forwards;
+}
+
+@keyframes sql {
+    100%{
+        width: 78%;
+    }
+}
+
+.html span {
+    border: 1px solid  springgreen;
+}
+
+.css span {
+    border: 1px solid rgba(157, 167, 180, 0.836);
+}
+
+.cpp span {
+    
+    border: 1px solid rgba(9, 91, 199, 0.836);
+}
+
+.javascript span {
+    border: 1px solid  rgba(0, 255, 0, 0.842);
+}
+
+.python span {
+    border: 1px solid  rgba(0, 255, 0, 0.842);
+}
+
+.sql span {
+    border: 1px solid  rgba(255, 30, 0, 0.815);
+}

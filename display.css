@@ -1,0 +1,65 @@
+body {
+    display: block;
+    margin: 0px;
+}
+
+
+
+
+.Flesson1 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+    background-color: aqua;
+    border: 2px solid red ;
+    align-items: t;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+
+.Flesson1 p {
+
+     
+    border: 2px solid red ;
+     background-color: lightpink;
+     column-gap: 10px;
+     width: 400px;
+     align-items: end;
+     height: 200px;
+     justify-content: space-between;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin-top: 100px;
+    background-color: blue;
+    padding: 100px 50px 100px 50px;
+    margin: 50px 500px 50px 50px;
+    height: 700px;
+    width: 500px;
+    justify-content: center;
+    border: 2px solid red;
+    align-items: end;
+}
+
+ 
+#eqalto {
+
+    background-color: turquoise;
+}
+
+.display-flex {
+
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+    flex-shrink: 0px; 
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+    flex: 2;
+}

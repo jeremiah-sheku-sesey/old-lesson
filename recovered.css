@@ -1,0 +1,46 @@
+.flip {
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+    transition: transform 1s;
+    
+}
+
+.flip:hover{
+    transform: rotateY(180deg);
+}
+
+.btn1
+{
+
+    color: white;
+    border: red 1px solid;
+    opacity: 0;
+    animation: btn1 3s 3s forwards;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+
+@keyframes btn1 {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        
+        opacity: 1;
+    }
+    
+}
+
+.btn1 {
+    transition: transfrom 1s;
+}
+
+
+.btn1:hover {
+    transform: rotateY(180deg);
+}

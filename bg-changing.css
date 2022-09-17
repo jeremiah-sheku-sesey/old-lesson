@@ -1,0 +1,372 @@
+body{
+
+    background-color: aqua;
+    margin: auto;
+    padding: auto;
+    max-width: 700px;
+    transition: animation 2s;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, Helvetica, sans-serif;
+    text-align: center;
+    padding: auto;
+    position: relative;
+    
+}
+
+body{
+    animation: animatingBG 2s linear infinite;
+}
+       
+@keyframes animatingBG {
+
+    0%{
+        background-color: aqua;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color: blue;
+    }
+    60%{
+        background-color: blueviolet;
+    }
+    80%{
+        background-color: crimson;
+    }
+
+    100%{
+          background-color: pink;
+    }
+    
+}
+
+
+.circle {
+
+    height: 100px;
+    width: 200px;
+    position: relative;
+    background-color:black;
+    text-transform: uppercase;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding-top: 100px;
+    border-radius: 100px;
+    color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: animation 1s;
+    top: -1000px;
+    left: 50px;
+    
+}
+
+
+
+.circle {
+
+    animation: animateCircle 3s linear infinite ;
+}
+
+@keyframes animateCircle {
+
+    0%{
+        
+        transform: rotate(360deg) translateZ(0);
+        border-bottom: 5px;
+        border: blue 1px solid;
+        opacity: 0;
+        top: -1000px;
+        left: 0px;
+        background-color: blue;
+    }
+    25%{
+        top: 0px;
+        right: 0px;
+        opacity: 1px;
+        background-color: rgba(15, 53, 223, 0.925);
+    }
+    50%{
+         
+        background-color: rgba(17, 13, 235, 0.308);
+        bottom: 0px;
+        top: 700px;
+        border-top: 1px;
+        border: rgba(175, 145, 8, 0.795) 1px solid; 
+         
+    }
+    75%{
+        bottom: -1000px;
+        left: 0px;
+        opacity: 0.5px;
+        background-color: rgb(0, 17, 255);
+    }
+    100%{
+           
+          border-top: rgb(2, 0, 128) solid 2px;
+          background-color: rgb(0, 17, 255);
+          top: 0px;
+          bottom: -9000px;
+          
+         
+           
+    }
+}
+
+.circle:hover{
+
+    background-color: rgb(216, 216, 233);
+    animation: none;
+    color: rgba(0, 0, 255, 0.034);
+ 
+}
+
+.circle:active{
+
+    background-color: blue;
+    animation: none;
+    color: white;
+    opacity: 1px;
+    
+}
+
+
+.circle3 {
+
+    height: 100px;
+    width: 200px;
+    background-color:black;
+    text-transform: uppercase;
+    margin-left: 200px;
+    text-align: center;  
+    padding-top: 100px;
+    border-radius: 100px;
+    color: blanchedalmond;
+    font-size: 15px;
+    position: relative;
+}
+
+.circle3 {
+
+    animation: animateCircle3 6s linear infinite ;
+     
+}
+
+
+@keyframes animateCircle3 {
+
+
+    0%{
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: blue;
+        left: 300px;
+        top: 0px;
+    }
+    50%{
+        background-color: green;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        background-color: white;
+        left: 0px;
+        top: 300px;   
+    }
+    100%{
+        background-color: white;
+        left: 0px;
+        top: 0px; 
+}
+
+}
+
+.circle3:hover  {
+    animation: none;
+    background-color: blue;
+
+}
+
+
+.circle2 {
+
+    height: 100px;
+    width: 200px;
+    position: relative;
+    background-color:black;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    text-align: center;  
+    padding-top: 100px;
+    border-radius: 100px;
+    color: blue;
+    top: -1000px;
+    left: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: animation 2s;
+    
+}
+
+
+
+.circle2 {
+
+    animation: animateCircle2 10s 3s infinite ;
+}
+
+@keyframes animateCircle2 {
+
+    0%{
+        
+        transform: rotate(360deg) translateZ(0);
+        border-bottom: 5px;
+        border: blue 1px solid;
+        opacity: 0;
+        bottom: -500px;
+        right: 500px;
+        background-color: blue;
+    }
+    25%{
+        top: 300px;
+        left: 700px;
+        opacity: 1px;
+        background-color: blue;
+    }
+    50%{
+         
+        background-color: blue;
+        top: 400px;
+        bottom: -500px;
+        border-top: 1px;
+        border: blue 1px solid; 
+         
+    }
+    75%{
+        bottom: 0px;
+        left: -1000px;
+        opacity: 0.5px;
+        background-color: blue;
+    }
+    100%{
+           
+          border-top: green solid 2px;
+          background-color: blue;
+          top: 0px;
+          left: 0px;
+          background-color: blue;
+          
+         
+           
+    }
+}
+
+
+
+.circle2:hover{
+
+    background-color: blue;
+    animation: none;
+    color: blue;
+}
+
+.circle2:active{
+
+    background-color: blue;
+    animation: none;
+    color: white;
+    opacity: 1px;
+}
+
+
+
+/*
+
+        @keyframes seccondAnimatingBG {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 500px;
+    }
+    50%{
+        top: 500px;
+        left: 500px;
+    }
+    75%{
+        top: 500px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+
+}
+
+*/
+.circle4 {
+
+    height: 100px;
+    width: 200px;
+    background-color:black;
+    text-transform: uppercase;
+    margin-left: 200px;
+    text-align: center;  
+    position: relative;
+    padding-top: 100px;
+    border-radius: 100px;
+    color: blanchedalmond;
+    font-size: 15px;
+}
+
+.circle4 {
+
+    animation: animateCircle4 0.5s linear reverse;
+     
+}
+
+
+@keyframes animateCircle4 {
+
+
+    0%{
+        background-color: white;
+        left: 0px;
+        top: -100px;
+    }
+    25%{
+        background-color: blue;
+        left: 300px;
+        top: 0px;
+    }
+    50%{
+        background-color: green;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        background-color: white;
+        left: 0px;
+        top: 300px;   
+    }
+    100%{
+        background-color: white;
+        left: 0px;
+        top: 0px; 
+}
+
+}
+
+.circle4:hover  {
+    animation: none;
+    background-color: blue;
+
+}

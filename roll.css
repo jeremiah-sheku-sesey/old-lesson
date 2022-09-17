@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(8, 0, 1);
+    transition: animation 2s;
+    animation: animateMe 2s linear infinite;
+}
+
+@keyframes animateMe {
+    
+    0%{
+        background-color: aqua;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color: blue;
+    }
+    60%{
+        background-color: blueviolet;
+    }
+    80%{
+        background-color: crimson;
+    }
+
+    100%{
+          background-color: pink;
+    }
+}
+
+.container {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles {
+
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: aqua;
+    margin: 0 4px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 3px aqua;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--j));
+    justify-content: center;
+}
+
+.bubbles span:nth-child(even) {
+    background: red;
+    box-shadow: 0 0 50px red;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(100vh) scale(0);
+    }
+    50%{
+        transform: translateX(50vh) scale(5);
+    }
+
+    75%{
+        transform:translateY(30vh) scale(3);
+    }
+    
+    100%{
+        transform: translateY(0vh) scale(0);
+    }
+    
+    
+}
+
+ span:hover{
+     animation:0ms;
+ }
